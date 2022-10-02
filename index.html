@@ -5,11 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Compound Intest</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <div id="app">
+        <div class="title">Compound Interest $</div>
+        <div class="form">
+            <form action="">
+                <div class="form-title">Initial Investment</div>
+                <input type="number" id="eventInitialCap" placeholder="$1000">
+                <div class="form-title">Annual Money Injection</div>
+                <input type="number" id="eventAnnualAdd" placeholder="$2400">
+                <div class="form-title">Years</div>
+                <input type="number" id="eventYears" placeholder="15">
+                <div class="form-title">Annual interest %</div>
+                <input type="number" id="eventInterestRate" placeholder="%">
+                <input type="submit" id="bAdd" value="Calculate">
+            </form>
+            <div class="value-future-space"></div>
+            <div class="value-future">
+                <div class="title-result">Result:</div>
+                <div id="result">$</div>
+            </div>
+        </div>
+    </div>
 
+    <script src="main.js"></script>
 </body>
 
 </html>

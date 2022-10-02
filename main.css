@@ -1,0 +1,98 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --light2: rgb(117, 117, 117);
+    --gold: #F7EF8A;
+    --gold2: #E0AA3E;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--darkest);
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--gold2);
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+.form {
+    background-color: var(--dark);
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    color: crimson;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: crimson;
+}
+
+button:hover {
+    background-color: crimson;
+    color: var(--light);
+}
+
+.form input {
+    margin: 5px 0;
+    padding: 8px;
+    display: block;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.form-title {
+    color: var(--light);
+    font-size: 13px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: var(--darker);
+    color: var(--light);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--gold2);
+    color: var(--darkest);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.value-future {
+    background-color: var(--light);
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.value-future-space {
+    background-color: transparent;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

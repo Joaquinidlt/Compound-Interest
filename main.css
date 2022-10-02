@@ -9,10 +9,62 @@
     --gold2: #E0AA3E;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
 body{
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--darkest);
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    height: 60px;
+    background-color: var(--dark);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: var(--gold2);
+    font-size: 1.6em;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--light);
+}
+
+header a:hover{
+    color: var(--gold2);
+}
+
+
+#app {
+    width: 100%;
+    padding: 0px;
+    padding-top: 80px;
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -95,4 +147,75 @@ input[type="submit"]:hover {
     align-items: center;
 }
 
+.info {
+    display: block;
+    margin: 10px;
+    color: var(--light);
+}
 
+.info h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    text-decoration: underline;
+}
+
+.info h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.info h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.info h4 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.info img {
+    background-color: #EEE;   
+    border-radius: 5px;
+}
+.info p {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.img1 {
+    display: block;
+    justify-self: center;
+}
+
+
+@media only screen and (max-width: 480px){
+    #app {
+        width: 100%;
+        padding: 0px;
+    }
+    .title {
+        color: var(--gold2);
+        font-size: 200%;
+    }
+    .form {
+        background-color: var(--dark);
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .info {
+        display: block;
+
+        margin: 10px;
+        color: var(--light);
+    }
+    div img {
+        width: 80%;
+    }
+}
